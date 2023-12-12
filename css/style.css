@@ -1,0 +1,434 @@
+/* -------------------link------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* ----------------link part end -------------- */
+/* -------------variable part start --------------- */
+:root{
+  --open-sens: 'Open Sans', sans-serif;
+  --primary_color:#fff;
+  --secondary-color:#FBD784;
+  --brand:#0000;
+}
+
+/* ------------------variable part end----------------- */
+
+/* ------------------common css part start---------------- */
+*{
+    margin: 0%;
+    padding: 0%;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+h1,h2,h3,h3,h4,h5,ol,ul{
+    padding: 0%;
+    margin: 0%;
+}
+ul,li,ol{
+    list-style: none;
+}
+/* ------------------part end------------------- */
+
+/* ------------------ menu part start---------------- */
+.main_manu{
+    background: #000 !important;;
+}
+.main_manu img{
+    width: 87px;
+    margin-right: 500px;
+}
+.main_manu ul{
+    display: flex;
+    gap: 60px;
+}
+.main_manu ul li a{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--open-sens);
+    color: var(--primary_color);
+    position: relative;
+    z-index: 999;
+}
+.main_manu ul li a:hover{
+    color: #000;
+}
+.main_manu ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    top: 0%;
+    left: 0%;
+    background: #fff;
+    border-radius: 10px 0px 10px 0px;
+    z-index: -11;
+    transition: all linear .3s;
+}
+.main_manu ul li a:hover::after{
+    height: 100%;
+}
+/* ------------------part end------------------- */
+
+/* ------------------bannar part start---------------- */
+#bannar{
+    background: url(../image/banner_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bannar_head{
+    margin-top: 400px;
+    margin-bottom: 400px;
+}
+.bannar_head h2{
+    font-size: 18px;
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-family: var(--open-sens);
+    letter-spacing: 7px;
+}
+.bannar_head h1{
+    font-size: 96px;
+    color: var(--primary_color);
+    font-weight: 700;
+    font-family: var(--open-sens);
+}
+.bannar_head h1{
+    font-size: 88px;
+    color: var(--primary_color);
+    font-weight: 700;
+    font-family: var(--open-sens);
+}
+/* ------------------part end------------------- */
+
+/* ------------------part start---------------- */
+#enjoyed{
+    background:#000 ;
+    padding-top: 326px;
+    padding-bottom: 351px;
+}
+.enjoyed_img img{
+    width: 582px;
+}
+.enjoyed_text h2{
+    font-size: 18px;
+    font-weight: 700;
+    font-family:var(--open-sens);
+    color: var(--secondary-color);
+    letter-spacing: 6px;
+    margin-top: 38px;
+}
+.enjoyed_text h3{
+    font-size: 64px;
+    font-weight: 700;
+    font-family: #fff;
+    color: var(--primary_color) !important;
+    width: 496px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+.enjoyed_text p{
+    font-size: 18px;
+    font-weight: 700;
+    font-family:var(--open-sens);
+    color:#fff;
+    width: 587px;
+    margin-bottom: 66px;
+}
+.enjoyed_texbutton a{
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  position: relative;
+  z-index: 999;
+}
+.enjoyed_texbutton a::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -11;
+    border-bottom: 4px solid #fff;
+    transition:  all linear .5s;
+    visibility: hidden;
+    opacity: 0%;
+}
+.enjoyed_texbutton a:hover::after{
+    visibility: visible;
+    height: 100%;
+    opacity: 100%;
+}
+/* ------------------part end------------------- */
+
+
+/* ------------------Bromo part start---------------- */
+#Bromo{
+    background: #000;
+    
+}
+.bromo_img{
+    background: url(../image/steps.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 559px;
+}
+.bromo-text h2{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--open-sens);
+    color: var(--secondary-color);
+    text-align: center;
+    letter-spacing: 6px;
+}
+.bromo-text h3{
+    font-size: 64px;
+    font-weight: 700;
+    font-family: var(--open-sens);
+    color: var(--secondary-color);
+    text-align: center;
+    width: 823px;
+    margin-left: 220px;
+}
+.bromo-text p{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: var(--open-sens);
+    color: var(--secondary-color);
+    text-align: center;
+    width: 828px;
+    margin-left: 212px;
+    margin-top: 14px;
+    line-height: 32px;
+}
+.bromo-button a{
+    font-size: 18px;
+    font-family: var(--open-sens);
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-left: 604px;
+    margin-bottom: 33px;
+    position: relative;
+    z-index: 999;
+}
+.bromo-button a::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    bottom: 0;
+    right: 0%;
+    background: var(--secondary-color);
+    visibility: hidden;
+    opacity: 0%;
+    transition: all linear .5s;
+    border-radius: 10px 0px 15px 0px;
+    z-index: -11;
+}
+.bromo-button a:hover::before{
+    width: 100%;
+    visibility: visible;
+    opacity: 100%;
+}
+.bromo-button a:hover{
+    color: #000;
+}
+/* ------------------ Bromo part end------------------- */
+
+
+/* ------------------INDONESIAN part start---------------- */
+#INDONESIAN{
+    background: #000;
+    padding-top: 295px;
+}
+.indonetia_text h2{
+    font-size: 18px;
+    font-weight: .700;
+    font-family: var(--open-sens);
+    color: var(--secondary-color);
+    letter-spacing: 6px;
+    margin-top: 153px;
+    margin-bottom: 19px;
+}
+.indonetia_text h3{
+    font-size: 64px;
+    font-weight: .700;
+    font-family: var(--open-sens);
+    color: var(--primary_color);
+    width: 520px;
+    margin-bottom: 19px;
+}
+.indonetia_text p{
+    font-size: 18px;
+    font-weight: .700;
+    font-family: var(--open-sens);
+    color: var(--secondary-color);
+    line-height: 32px;
+    width: 560px;
+}
+.indonetian_img img{
+    width: 624px;
+    margin-bottom: 199px;
+}
+/* ------------------ INDONESIAN part end------------------- */
+
+
+/* ------------------foter part start---------------- */
+#foter{
+    background: #000;
+}
+.foter_logo img{
+    width: 150px;
+}
+.foter_head h2{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: var(--open-sens);
+    color: var(--primary_color);
+    line-height: 49px;
+    padding-top: 81px;
+    width: 405px;
+}
+.foter_head p a{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: var(--open-sens);
+    color: var(--secondary-color);
+    width: 138px;
+    margin-top: 36px;
+}
+.foter_head p a:hover{
+    color: var(--primary_color);
+}
+.foter_icons ul{
+    display: flex;
+    gap: 30px;
+}
+.foter_icons ul li a{
+    font-size: 30px;
+    color: var(--secondary-color);
+    position: relative;
+    z-index: 999;
+    transition: all linear;
+}
+/* .foter_icons ul li a::after{
+    position: absolute;
+    content: '';
+    width: 40px;
+    border-radius: 50%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -11;
+    background: var(--primary_color);
+    transition: all linear .5s;
+}
+.foter_icons ul li a:hover::after{
+    height: 40px;
+} */
+.foter_icons ul li a:hover{
+    color:#000;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.explore {
+    display: flex;
+    flex-wrap: wrap;
+}
+.explore h2{
+   font-size: 22px;
+   font-family: var(--open-sens);
+   font-weight: 400;
+   color: var(--primary_color);
+   margin-right: 18px;
+}
+.all_services{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 73px;
+}
+.service h2 a{
+    font-size: 20px;
+    font-family: var(--open-sens);
+    font-weight: 400;
+    color: var(--primary_color);
+    margin-bottom: 38px;
+}
+.explore_nuttun a{
+    width: 232px;
+    height: 59px;
+    background: #FFA343;
+    font-size: 17px;
+    font-family: var(--open-sens);
+    font-weight: 700;
+    color: #000;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 59px;
+    transition: all linear .3s;
+}
+.explore_nuttun a:hover{
+   color: var(--primary_color);
+   background: #000;
+   border: 1px solid #FFA343;
+}
+.all_services.service ul,li a{
+    font-size: 19px;
+    font-weight: 400;
+    font-family: var(--open-sens);
+    color: var(--primary_color);
+    margin-right: 80px;
+}
+.all_services.service ul,li a:hover{
+     color: var(--secondary-color);
+}
+.about h2 a{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--open-sens);
+    color: var(--primary_color);
+    margin-bottom: 38px;
+}
+.about h2 a:hover{
+    color: var(--secondary-color);
+}
+.help h2 a{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--open-sens);
+    color: var(--primary_color);
+    margin-bottom: 38px;
+}
+.help h2 a:hover{
+    color: var(--secondary-color);
+}
+.copy_right h2{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--open-sens);
+    color: var(--primary_color);
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+/* ------------------foter part end------------------- */
+
+/* ------------------part start---------------- */
+/* ------------------part end------------------- */
+
+
+/* ------------------part start---------------- */
+/* ------------------part end------------------- */
+
+
+/* ------------------part start---------------- */
+/* ------------------part end------------------- */
